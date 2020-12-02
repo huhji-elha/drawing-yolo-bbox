@@ -1,11 +1,17 @@
 # drawing-yolo-bbox
-Yolo 학습 완료 후 한글로 bounding box 그리기
+한글로 bounding box 그리기
+drawing bbox with hanguel
 
-## results
+## Requirement
+* pytorch >= 1.6.0
+* Pillow
+* opencv-python
+
+## Results
 ![](outputs/test_sample.png) ![](outputs/test_sample01.png)
 
 
-## using with customed yolo
+## Using with customed yolo
 ```shell
 python detect.py --cfg yolov3-custom.cfg --names class.names --weights yolov3.pt --source sample.png
 ```
@@ -18,7 +24,7 @@ python detect.py --cfg yolov3-custom.cfg --names class.names --weights yolov3.pt
 * cfg파일과 weights 파일은 제공하지 않습니다.
 * 학습한 yolo모델의 class명이 한국어일 때 bounding box를 그리기 위한 코드입니다.
 
-## just draw bbox without yolo
+## Just draw bbox without yolo
 
 ```python
 from bounding_box import bounding_box as bbox
