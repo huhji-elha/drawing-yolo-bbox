@@ -56,6 +56,7 @@ color_list = navy, blue, aqua, teal, olive,
 ```
 
 * result
+
 ![](outputs/sample_output.png)
 
 ### If error
